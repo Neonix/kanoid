@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<title></title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="robots" content="index, follow" />
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+	
+		<style type="text/css">
+		body {background-color: #000000}
+		.js-holder{width: 370px;background:none;border:none}
+		.js-project{width:163px}
+		.js-project h2{border:none;font-size:inherit}
+		.js-first{clear:none}
+		.js-last{margin: 0 10px 10px 0}
+		</style>
+	</head>
+	<body>
+
+		<div id="container" align="center">
+			<canvas id="canvas" width="1000" height="600"></canvas>
+
+			<p style="display: none"><br><br><a href="#" id="btnRestart">Restart</a></p>
+			<audio id="audio_new_game" preload="auto" autobuffer>
+				<source src="audio/new_game.mp3" />
+				<source src="audio/new_game.ogg" />
+				<source src="audio/new_game.wav" />
+			</audio>
+			<audio id="audio_new_level" preload="auto" autobuffer>
+				<source src="audio/new_level.mp3" />
+				<source src="audio/new_level.ogg" />
+				<source src="audio/new_level.wav" />
+			</audio>
+			<audio id="audio_die" preload="auto" autobuffer>
+				<source src="audio/die.mp3" />
+				<source src="audio/die.ogg" />
+				<source src="audio/die.wav" />
+			</audio>
+			<audio id="audio_pong" preload="auto" autobuffer>
+				<source src="audio/pong.mp3" />
+				<source src="audio/pong.ogg" />
+				<source src="audio/pong.wav" />
+			</audio>
+			<audio id="audio_ping" preload="auto" autobuffer>
+				<source src="audio/ping.mp3" />
+				<source src="audio/ping.ogg" />
+				<source src="audio/ping.wav" />
+			</audio>
+			<audio id="audio_ping2" preload="auto" autobuffer>
+				<source src="audio/ping2.mp3" />
+				<source src="audio/ping2.ogg" />
+				<source src="audio/ping2.wav" />
+			</audio>
+			<audio id="audio_game_over" preload="auto" autobuffer>
+				<source src="audio/game_over.mp3" />
+				<source src="audio/game_over.ogg" />
+				<source src="audio/game_over.wav" />
+			</audio>
+		</div>
+
+		<script type="text/javascript" src="m6kanoid.js"></script>
+		<script type="text/javascript">
+		var Kanoid = new Kanoid('canvas');
+		Kanoid.start();
+		</script>
+	</body>
+</html>
